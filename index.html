@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirect</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <div class="min-h-screen bg-gray-100">
+      <!-- Navbar -->
+      <div class="navbar-container bg-white flex px-16 justify-between items-center py-8 space-x-4">
+         <div class="left text-xl font-black flex items-center space-x-2">
+            <img src="images/Logo.png" alt="logo" />
+            <div class="company-title">Hirect</div>
+         </div>
+         <div class="center">
+            <div class="nav-item-container flex space-x-10 text-gray-500">
+               <li class="nav-item hover:text-gray-700">Find Jobs</li>
+               <li class="nav-item hover:text-gray-700">Recent Post</li>
+               <li class="nav-item hover:text-gray-700">Company</li>
+            </div>
+         </div>
+         <div class="right flex space-x-5 items-center">
+            <div class="text-[#28344A]">Login</div>
+            <div class="text-white px-6 py-3 bg-[#864BD8] rounded-[24px]">Create account</div>
+         </div>
+      </div>
+      <!-- Hero landing page -->
+      <div class="hero text-center pt-20 bg-white pb-10">
+         <img src="images/left.png" class="hero-left-image" alt="left">
+         <img src="images/right.png" class="hero-right-image" alt="right">
+         <div class="hero-title text-[50px] font-extrabold">
+            More Jobs for <br/> <span class="text-[#F57343]"> hardworking </span> People
+         </div>
+         <div class="hero-context mt-5 text-[#5B5A62]">
+            Amazing oppurtunities for everyone, <br/>Jobs On and On....
+         </div>
+         <div class="hero-searchbar flex justify-center items-center mt-20 mb-6">
+            <div class="search-box flex px-8 py-3 items-center rounded-[28px] space-x-3 text-gray-700 text-[14px]">
+               <div class="search-box-search flex items-center space-x-3">
+                  <i class="fa fa-search font-thin" aria-hidden="true"></i>
+                  <input type="text" placeholder="Job title or Keyword" class="outline-none">
+               </div>
+               <div class="searchbox-location px-4 border-x border-gray-400">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span class="ml-[4px]">Location</span>
+               </div>
+               <div class="search-box-type">Remotely <i class="fa fa-angle-down ml-[4px]" aria-hidden="true"></i></div>
+            </div>
+            <div class="search-button mx-2 px-6 py-4 bg-[#F57343] text-white font-medium rounded-full">
+               Search Job
+            </div>
+         </div>
+      </div>
+      <!-- Trending Searches -->
+      <div class="trending-search py-14 bg-white">
+         <div class="trending-title text-center mb-6 font-medium text-[18px]">
+            Trending Searches
+         </div>
+         <div class="trending-content flex justify-center space-x-5">
+            <li class="trending-items">Remote Jobs</li>
+            <li class="trending-items">UI/UX Design</li>
+            <li class="trending-items">Product Design</li>
+            <li class="trending-items">Development</li>
+            <li class="trending-items">Work from Home</li>
+         </div>
+      </div>
+      <!-- Steps to apply -->
+      <div class="steps-container py-20 text-center bg-white">
+         <div class="steps-title-container">
+            <div class="steps-subtitle">how it works</div>
+            <div class="steps-title text-[45px] mt-2">Simple steps to get <br> your next job</div>
+         </div>
+         <div class="steps-card-container flex justify-center py-[80px] space-x-10">
+            <div class="step-card flex flex-col items-center justify-center p-10 border border-gray-100 rounded-xl">
+               <div class="step-card-img-container p-6 flex items-center justify-center bg-[#EBDDFD] rounded-full mb-6">
+                  <img class="step-card-img" src="images/register.png" alt="img">
+               </div>
+               <div class="step-card-title">Register your Account</div>
+               <div class="step-card-context  text-[#6f6f75]">Register your account on Hirect and add your basic details.</div>
+            </div>
+            <div class="step-card flex flex-col items-center justify-center p-10 border border-gray-100 rounded-xl">
+               <div class="step-card-img-container p-6 flex items-center justify-center bg-[#FFF0CD] rounded-full mb-6">
+                  <img class="step-card-img" src="images/update.png" alt="img">
+               </div>
+               <div class="step-card-title">Update Resume</div>
+               <div class="step-card-context  text-[#6f6f75]">Update your resume with your best skills so that recruiters can know you better </div>
+            </div>
+            <div class="step-card flex flex-col items-center justify-center p-10 border border-gray-100 rounded-xl">
+               <div class="step-card-img-container p-6 flex items-center justify-center bg-[#FFE8E0] rounded-full mb-6">
+                  <img class="step-card-img" src="images/apply.png" alt="img">
+               </div>
+               <div class="step-card-title">Apply for new Jobs</div>
+               <div class="step-card-context  text-[#6f6f75]">Apply to jobs in just three easy steps with Hirect and take one step closer in finding your dream job.</div>
+            </div>
+            
+         </div>
+      </div>
+      <!-- Featured Jobs -->
+      <div class="featured-jobs bg-[#EFEEF3] py-16 px-20 flex flex-col items-center space-y-[30px]">
+         <div class="jobs-near-me-container w-[85%] flex items-end">
+            <div class="featured-title-container flex-1">
+               <h5 class="featured-subtitle text-[#864BD8] uppercase tracking-[3px] font-medium poppins">Jobs near me</h5>
+               <h3 class="featured-title text-[35px] inter font-extrabold">Featured Jobs</h3>
+               <p class="inter text-[#5B5A62] text-[14px] mt-[5px]">Employee and Employment company</p>
+            </div>
+            <div class="featured-buttons p-4 text-[24px] flex space-x-2">
+               <div class="left-button w-[45px] h-[45px] bg-white rounded-full flex items-center justify-center shadow-sm"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+               <div class="right-button w-[45px] h-[45px] bg-[#F57343] text-white rounded-full flex items-center justify-center shadow-sm"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+            </div>
+         </div>
+         <div class="jobs-container w-[85%] flex justify-between flex-wrap">
+            <div class="job-card bg-white py-5 px-8 rounded-lg">
+               <div class="job-company flex items-center space-x-2 mb-[25px]">
+                  <div class="company-logo p-2 shadow-md rounded-lg">
+                     <img src="images/gucci.png" alt="gucci" />
+                  </div>
+                  <div class="company-info">
+                     <div class="company-name text-[#292929] font-semibold inter text-[18px]">Gucci</div>
+                     <div class="days-ago text-[#B5B8C6] text-[12px] mt-[0px]">5 days ago</div>
+                  </div>
+               </div>
+               <div class="job-description text-[20px] font-semibold inter">
+                  Senior UX/UI Developer with strong Designer skills
+               </div>
+               <div class="job-location mt-[30px] flex space-x-4 items-center text-[13px]">
+                  <div class="location flex items-center space-x-2 px-[10px] py-[3px] bg-[#F8ECE8] text-[#F36532] inter rounded-md">
+                     <i class="fa fa-map-marker"></i>
+                     <div>Oslo, Norway</div>
+                  </div>
+                  <div class="job-type inter bg-[#F8F7FE] text-[#838383] px-[10px] py-[3px] rounded-md">Part time</div>
+               </div>
+            </div>
+            <div class="job-card bg-white py-5 px-8 rounded-lg">
+               <div class="job-company flex items-center space-x-2 mb-[25px]">
+                  <div class="company-logo p-2 shadow-md rounded-lg">
+                     <img src="images/gucci.png" alt="gucci" />
+                  </div>
+                  <div class="company-info">
+                     <div class="company-name text-[#292929] font-semibold inter text-[18px]">Gucci</div>
+                     <div class="days-ago text-[#B5B8C6] text-[12px] mt-[0px]">5 days ago</div>
+                  </div>
+               </div>
+               <div class="job-description text-[20px] font-semibold inter">
+                  Senior UX/UI Developer with strong Designer skills
+               </div>
+               <div class="job-location mt-[30px] flex space-x-4 items-center text-[13px]">
+                  <div class="location flex items-center space-x-2 px-[10px] py-[3px] bg-[#F8ECE8] text-[#F36532] inter rounded-md">
+                     <i class="fa fa-map-marker"></i>
+                     <div>Oslo, Norway</div>
+                  </div>
+                  <div class="job-type inter bg-[#F8F7FE] text-[#838383] px-[10px] py-[3px] rounded-md">Part time</div>
+               </div>
+            </div>
+            <div class="job-card bg-white py-5 px-8 rounded-lg">
+               <div class="job-company flex items-center space-x-2 mb-[25px]">
+                  <div class="company-logo p-2 shadow-md rounded-lg">
+                     <img src="images/gucci.png" alt="gucci" />
+                  </div>
+                  <div class="company-info">
+                     <div class="company-name text-[#292929] font-semibold inter text-[18px]">Gucci</div>
+                     <div class="days-ago text-[#B5B8C6] text-[12px] mt-[0px]">5 days ago</div>
+                  </div>
+               </div>
+               <div class="job-description text-[20px] font-semibold inter">
+                  Senior UX/UI Developer with strong Designer skills
+               </div>
+               <div class="job-location mt-[30px] flex space-x-4 items-center text-[13px]">
+                  <div class="location flex items-center space-x-2 px-[10px] py-[3px] bg-[#F8ECE8] text-[#F36532] inter rounded-md">
+                     <i class="fa fa-map-marker"></i>
+                     <div>Oslo, Norway</div>
+                  </div>
+                  <div class="job-type inter bg-[#F8F7FE] text-[#838383] px-[10px] py-[3px] rounded-md">Part time</div>
+               </div>
+            </div>
+            <div class="job-card bg-white py-5 px-8 rounded-lg">
+               <div class="job-company flex items-center space-x-2 mb-[25px]">
+                  <div class="company-logo p-2 shadow-md rounded-lg">
+                     <img src="images/gucci.png" alt="gucci" />
+                  </div>
+                  <div class="company-info">
+                     <div class="company-name text-[#292929] font-semibold inter text-[18px]">Gucci</div>
+                     <div class="days-ago text-[#B5B8C6] text-[12px] mt-[0px]">5 days ago</div>
+                  </div>
+               </div>
+               <div class="job-description text-[20px] font-semibold inter">
+                  Senior UX/UI Developer with strong Designer skills
+               </div>
+               <div class="job-location mt-[30px] flex space-x-4 items-center text-[13px]">
+                  <div class="location flex items-center space-x-2 px-[10px] py-[3px] bg-[#F8ECE8] text-[#F36532] inter rounded-md">
+                     <i class="fa fa-map-marker"></i>
+                     <div>Oslo, Norway</div>
+                  </div>
+                  <div class="job-type inter bg-[#F8F7FE] text-[#838383] px-[10px] py-[3px] rounded-md">Part time</div>
+               </div>
+            </div>
+            <div class="job-card bg-white py-5 px-8 rounded-lg">
+               <div class="job-company flex items-center space-x-2 mb-[25px]">
+                  <div class="company-logo p-2 shadow-md rounded-lg">
+                     <img src="images/gucci.png" alt="gucci" />
+                  </div>
+                  <div class="company-info">
+                     <div class="company-name text-[#292929] font-semibold inter text-[18px]">Gucci</div>
+                     <div class="days-ago text-[#B5B8C6] text-[12px] mt-[0px]">5 days ago</div>
+                  </div>
+               </div>
+               <div class="job-description text-[20px] font-semibold inter">
+                  Senior UX/UI Developer with strong Designer skills
+               </div>
+               <div class="job-location mt-[30px] flex space-x-4 items-center text-[13px]">
+                  <div class="location flex items-center space-x-2 px-[10px] py-[3px] bg-[#F8ECE8] text-[#F36532] inter rounded-md">
+                     <i class="fa fa-map-marker"></i>
+                     <div>Oslo, Norway</div>
+                  </div>
+                  <div class="job-type inter bg-[#F8F7FE] text-[#838383] px-[10px] py-[3px] rounded-md">Part time</div>
+               </div>
+            </div>
+            <div class="job-card bg-white py-5 px-8 rounded-lg">
+               <div class="job-company flex items-center space-x-2 mb-[25px]">
+                  <div class="company-logo p-2 shadow-md rounded-lg">
+                     <img src="images/gucci.png" alt="gucci" />
+                  </div>
+                  <div class="company-info">
+                     <div class="company-name text-[#292929] font-semibold inter text-[18px]">Gucci</div>
+                     <div class="days-ago text-[#B5B8C6] text-[12px] mt-[0px]">5 days ago</div>
+                  </div>
+               </div>
+               <div class="job-description text-[20px] font-semibold inter">
+                  Senior UX/UI Developer with strong Designer skills
+               </div>
+               <div class="job-location mt-[30px] flex space-x-4 items-center text-[13px]">
+                  <div class="location flex items-center space-x-2 px-[10px] py-[3px] bg-[#F8ECE8] text-[#F36532] inter rounded-md">
+                     <i class="fa fa-map-marker"></i>
+                     <div>Oslo, Norway</div>
+                  </div>
+                  <div class="job-type inter bg-[#F8F7FE] text-[#838383] px-[10px] py-[3px] rounded-md">Part time</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Job Categories -->
+      <div class="job-cat-container py-20 text-center bg-white">
+         <div class="job-cat-title steps-title-container">
+            <div class="steps-subtitle text-[#F57343] poppins">99+ jobs category</div>
+            <div class="steps-title text-[45px] mt-2 mont">Choose by Category</div>
+            <div class="job-cat-context mt-4 text-[#5B5A62] inter">You do not have the right to remain silent... let us know <br>what it takes to challenge you</div>
+         </div>
+         <div class="job-cards-container flex pt-16 justify-center items-center space-x-8">
+            <div class="job-cat-card border border-gray-100 rounded-lg px-10 py-5 bg-white">
+               <div class="job-cat-img-container inline-block p-2 bg-[#E4F7F1] flex items-center justify-center">
+                  <img src="images/design.png" alt="design">
+               </div>
+               <div class="job-cat-desc inter mt-2">
+                  <div class="job-cat-title text-[#292929] font-medium">Design</div>
+                  <div class="job-vacancy text-[#919098] text-[0.8rem]">100+ Vacancy</div>
+               </div>
+            </div>
+            <div class="job-cat-card border border-gray-100 rounded-lg px-10 py-5 bg-white">
+               <div class="job-cat-img-container inline-block p-2 bg-[#FFEAE0] flex items-center justify-center">
+                  <img src="images/Work.png" alt="design">
+               </div>
+               <div class="job-cat-desc inter mt-2">
+                  <div class="job-cat-title text-[#292929] font-medium">Business</div>
+                  <div class="job-vacancy text-[#919098] text-[0.8rem]">120+ Vacancy</div>
+               </div>
+            </div>
+            <div class="job-cat-card border border-gray-100 rounded-lg px-10 py-5 bg-white">
+               <div class="job-cat-img-container inline-block p-2 bg-[#F8F0DE] flex items-center justify-center">
+                  <img src="images/Setting.png" alt="design">
+               </div>
+               <div class="job-cat-desc inter mt-2">
+                  <div class="job-cat-title text-[#292929] font-medium">Development</div>
+                  <div class="job-vacancy text-[#919098] text-[0.8rem]">120+ Vacancy</div>
+               </div>
+            </div>
+            <div class="job-cat-card border border-gray-100 rounded-lg px-10 py-5 bg-white">
+               <div class="job-cat-img-container inline-block p-2 bg-[#EAE1F6] flex items-center justify-center">
+                  <img src="images/Send.png" alt="design">
+               </div>
+               <div class="job-cat-desc inter mt-2">
+                  <div class="job-cat-title text-[#292929] font-medium">Communication</div>
+                  <div class="job-vacancy text-[#919098] text-[0.8rem]">120+ Vacancy</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Testimonial -->
+      <div class="testimonial-container py-20 text-center bg-white flex flex-col items-center">
+         <div class="testimonial-title steps-title-container">
+            <div class="steps-subtitle text-[#0D8772]">testimonials</div>
+            <div class="steps-title text-[45px] mt-2">What our customer say</div>
+         </div>
+         <div class="testimonial-data py-20 w-[70%] border flex justify-between items-center space-x-10 px-20">
+            <div class="testimonial-image w-[40%]">
+               <img src="images/testimonial_image.png" alt="testimonial">
+            </div>
+            <div class="testimonial-content w-[60%] border h-[100%]">
+               <div class="testimonial-name">
+                  <p>Justin Alins</p>
+                  <p>Product Designer</p>
+               </div>
+               <div class="testimonial-review">
+                  “Really Jobfind is the best platform to get any kind of job, aspecially their support was awesome, They have tried to level best to give best support of new candidate.”
+               </div>
+               <div class="testimonial-location">
+                  Behance
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Newsletter -->
+      <div class="newsletter-container p-10 flex items-center justify-center bg-white">
+         <div class="newsletter py-20 space-y-10 rounded-[25px]">
+            <div class="nl-heading text-center">
+               <div class="nl-subtitle steps-subtitle poppins text-[#BC95F2]">news letter</div>
+               <div class="nl-title steps-title text-[40px] mont text-white">Subscribe to Newsletter</div>
+            </div>
+            <div class="nl-input-container w-[55%] bg-white py-1 pl-6 pr-1 flex items-center rounded-full">
+               <input type="text" placeholder="Enter your email address" class="flex-1 mr-2 poppins text-[#A3A2A8] outline-none">
+               <button class="rounded-full bg-[#FFB200] text-white inter py-4 px-3">Subscribe</button>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
